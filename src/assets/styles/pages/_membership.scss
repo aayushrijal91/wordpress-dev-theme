@@ -1,0 +1,132 @@
+.membership {
+    padding: 7.5rem 0 23rem 0;
+
+    @media screen and (max-width:576px) {
+        padding: 2.75rem 0 23rem 0;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 2.25rem;
+    }
+
+    .description,
+    .description p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+}
+
+.comparison {
+    padding: 5.5rem 0;
+
+    @media screen and (max-width:576px) {
+        padding: 2.75rem 0;
+    }
+
+    .title {
+        font-size: 2.25rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        padding: 0 2.375rem;
+        height: 140px;
+        margin-bottom: 0;
+
+        @media screen and (max-width:576px) {
+            font-size: 0.875rem;
+            padding: 0 1rem;
+            height: 60px;
+        }
+    }
+
+    .table {
+
+        .membership-benefits,
+        .other-companies,
+        .our-company {
+            background: $white;
+
+            ul {
+                li {
+                    padding: 1.375rem;
+                    font-size: 1.125rem;
+                    border-bottom: 1px solid $lightgray;
+                    text-align: center;
+                    height: 70px;
+
+                    @media screen and (max-width:768px) {
+                        font-size: 1rem;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        font-size: 0.75rem;
+                        padding: 0.75rem;
+                        overflow-y: auto;
+                    }
+
+                    span {
+                        font-size: 0.875rem;
+                        display: block;
+                        color: #9A9A9A;
+
+                        @media screen and (max-width:576px) {
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+
+        .membership-benefits {
+            border-bottom: 5px solid $white;
+            border-top: 5px solid $gray;
+
+            ul {
+                li {
+                    text-align: left;
+                }
+            }
+        }
+
+        .other-companies {
+            border: 5px solid $black;
+            font-weight: bold;
+        }
+
+        .our-company {
+            border: 5px solid $primary;
+            background: #FFE9DF;
+            font-weight: bold;
+        }
+    }
+
+    .buttons {
+        margin-top: 5.5rem;
+
+        @media screen and (max-width:576px) {
+            margin-top: 2.75rem;
+        }
+
+        a.btn {
+            font-size: 0.875rem;
+            font-weight: bold;
+            padding: 1.45rem 2.5rem;
+            width: 225px;
+
+            @media screen and (max-width:576px) {
+                padding: 1.45rem 0;
+                width: 100%;
+            }
+        }
+    }
+}

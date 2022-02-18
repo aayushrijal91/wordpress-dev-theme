@@ -1,0 +1,32 @@
+section.gallery-section {
+    padding: 9rem 0;
+
+    .title {
+        font-size: 3.125rem;
+        margin-bottom: 3rem;
+    }
+
+    .nav {
+        .nav-link {
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-radius: 0;
+            background: $light;
+            color: $secondary;
+            text-align: center;
+            padding: 2.188rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .tab-content {
+        .item {
+            margin-bottom: 1rem;
+
+            .heading {
+                padding: 1.125rem 0;
+                color: $lightgray;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+
+@font-face {
+	font-family: 'ArticulatCF';
+	src: url('../webfonts/ArticulatCF-Normal.eot');
+	src: local('☺'), url('../webfonts/ArticulatCF-Normal.woff') format('woff'), url('../webfonts/ArticulatCF-Normal.ttf') format('truetype'), url('../webfonts/ArticulatCF-Normal.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArticulatCF';
+	src: url('../webfonts/ArticulatCF-Medium.eot');
+	src: local('☺'), url('../webfonts/ArticulatCF-Medium.woff') format('woff'), url('../webfonts/ArticulatCF-Medium.ttf') format('truetype'), url('../webfonts/ArticulatCF-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArticulatCF';
+	src: url('../webfonts/ArticulatCF-Bold.eot');
+	src: local('☺'), url('../webfonts/ArticulatCF-Bold.woff') format('woff'), url('../webfonts/ArticulatCF-Bold.ttf') format('truetype'), url('../webfonts/ArticulatCF-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArticulatCF';
+	src: url('../webfonts/ArticulatCF-ExtraBold.eot');
+	src: local('☺'), url('../webfonts/ArticulatCF-ExtraBold.woff') format('woff'), url('../webfonts/ArticulatCF-ExtraBold.ttf') format('truetype'), url('../webfonts/ArticulatCF-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+$font-articulat: 'ArticulatCF';
+$font-body: $font-articulat;
+
+// Font Weights
+$font-weights: (
+    'light':        300,
+    'medium':       500,
+    'semibold':     600,
+    'bold':         700,
+    'extrabold':    800,
+    'black':        900,
+);
+@each $name, $weight in $font-weights {
+    .font-weight-#{$name} {
+        font-weight: $weight;
+    }
+}

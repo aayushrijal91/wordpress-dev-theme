@@ -1,0 +1,52 @@
+.booking-form {
+    padding: 5.625rem 0;
+
+    @media screen and (max-width:576px) {
+        padding: 2.75rem 0;
+    }
+
+    .title {
+        font-size: 3.438rem;
+        margin-bottom: 10rem;
+
+    }
+
+    .subtitle {
+        font-size: 3rem;
+    }
+
+    a.btn {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .form-contain {
+        margin-top: 3.125rem;
+
+        label {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        textarea {
+            height: 18rem !important;
+        }
+
+        .btn {
+            font-size: 1.125rem;
+            padding: 1.5rem;
+            font-weight: 700;
+            border-radius: 0;
+            display: block;
+            width: 100%;
+
+            @media screen and (max-width:576px) {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

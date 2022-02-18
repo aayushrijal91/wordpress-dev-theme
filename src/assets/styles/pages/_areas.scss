@@ -1,0 +1,418 @@
+.noresult {
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.areas-section {
+    padding-top: 4rem;
+
+    @media screen and (max-width: 576px) {
+        padding: 2rem 0;
+    }
+
+    .title {
+        font-size: 3rem;
+
+        @media screen and (max-width: 576px) {
+            font-size: 2.25rem;
+            text-transform: uppercase;
+        }
+    }
+
+    ul.nav-pills {
+        margin-top: 3.75rem;
+
+        li.nav-item {
+            text-align: center;
+
+            a.nav-link {
+                font-size: 1.125rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 1.125rem;
+                background: $white;
+                margin: 0.25rem;
+                color: $black;
+                border-radius: 0;
+
+                &:hover {
+                    background: $primary;
+                    color: $white;
+                }
+            }
+
+            a.active {
+                background: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
+.areatop {
+    padding: 4rem 0;
+
+    @media screen and (max-width: 576px) {
+        padding: 0 0 2.25rem 0;
+    }
+
+    .heading {
+        font-size: 1.125rem;
+    }
+
+    .note {
+        font-size: 1.8rem;
+        color: #3C4A5A;
+        font-weight: normal;
+
+        a {
+            color: #3C4A5A;
+            font-weight: 500;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .alphbetwrap {
+        padding: 0;
+
+        .allsearch {
+            display: inline-block;
+            background-color: $white;
+            text-align: center;
+            background-color: $white;
+            margin-right: 1.2rem;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0.713rem 1.688rem;
+            color: #3C4A5A;
+            cursor: pointer;
+            margin-right: 0.214rem;
+        }
+
+        .alphabet {
+            display: inline-block;
+            background-color: $white;
+            color: #3C4A5A;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            margin-right: 0.214rem;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 0.713rem 1.45rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.35s all ease;
+
+            &:hover {
+                color: $white;
+                background-color: $primary;
+            }
+
+        }
+
+        .active {
+            background-color: $primary;
+            color: $white;
+        }
+
+    }
+
+}
+
+.areawrap {
+    padding: 3.25rem 0;
+
+    @media screen and (max-width: 576px) {
+        padding: 2.75rem 0;
+    }
+
+    .arealistwrap {
+        h3 {
+
+            font-size: 3rem;
+            line-height: 1;
+            color: #1B2039;
+            margin-bottom: 3.2rem;
+        }
+
+        ul {
+            margin-bottom: 0;
+
+            li {
+                display: block;
+                text-align: center;
+
+                a {
+                    font-size: 1.178rem;
+                    color: $black;
+                    padding: 1.25rem 1.5rem;
+                    margin-bottom: 0.6rem;
+                    display: block;
+                    background: $light;
+                    font-weight: bold;
+                    box-shadow: 0px 26.1776px 10.471px -20.9421px rgba(0, 0, 0, 0.1);
+                    transition: 0.35s all ease;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.75rem;
+                    }
+
+                    &:hover {
+                        color: $white;
+                        background: $secondary;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .areahide {
+            display: none;
+        }
+
+        .mbottom {
+            margin-bottom: 7.2rem;
+        }
+
+        .seemore {
+            color: #959595;
+            font-style: italic;
+            text-decoration: underline;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+
+        }
+
+    }
+
+    .arealisthide {
+        display: none;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 7rem;
+    }
+
+
+    .loadmorewrap {
+        position: relative;
+        text-align: center;
+        padding: 3rem 0 1.6rem;
+
+        a {
+            font-weight: bold;
+            color: #959595;
+            font-size: 1.2rem;
+            height: 5rem;
+            line-height: 5.2rem;
+            width: 13.2rem;
+            display: inline-block;
+            text-align: center;
+            border-radius: 0.2rem;
+            background-color: #e5e8e7;
+
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+            }
+
+        }
+
+        &:after {
+            position: absolute;
+            width: 42%;
+            height: 1px;
+            background-color: #d7d7d7;
+            content: "";
+            right: 0;
+            top: 5.5rem;
+        }
+
+        &:before {
+            position: absolute;
+            width: 42%;
+            height: 1px;
+            background-color: #d7d7d7;
+            content: "";
+            left: 0;
+            top: 5.5rem;
+        }
+
+    }
+
+}
+
+div.droplist {
+    position: relative;
+}
+
+div.droplist>div.caption {
+    border: 1px solid #C4C4C4;
+    padding: 11px 24px;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0.5rem;
+        top: 35%;
+        border: solid $primary;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        transition: all .35s ease;
+    }
+}
+
+div.droplist>div.list {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    display: none;
+}
+
+div.droplist>div.list>div.item {
+    padding: 11px 24px;
+    background-color: #cecece;
+    cursor: pointer;
+}
+
+div.droplist>div.list>div.item.selected {
+    font-weight: bold;
+}
+
+div.droplist>div.caption:hover,
+div.droplist>div.list>div.item:hover {
+    background-color: $primary;
+    color: #fff;
+}
+
+div.droplist.open>div.caption {
+    border-radius: 3px 3px 0 0;
+    border-bottom: solid 1px #999;
+}
+
+div.droplist.open>div.list {
+    display: block;
+    z-index: 99;
+}
+
+.suburb-content1 {
+    padding-top: 4rem;
+
+    @media screen and (max-width:576px) {
+        padding-top: 1.375rem;
+    }
+
+    .content-wrap {
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+        margin-bottom: -6rem;
+        position: relative;
+        z-index: 9;
+
+        .left-content {
+            padding: 4.5rem;
+
+            @media screen and (max-width:576px) {
+                padding: 1rem;
+            }
+
+            .title {
+                font-size: 2.25rem;
+                margin-bottom: 1.5rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .subtitle {
+                font-size: 1.125rem;
+                line-height: 1.25;
+                margin: 1.625rem 0 2.375rem 0;
+
+                @media screen and (max-width:576px) {
+                    margin: 1.375rem 0;
+                }
+            }
+
+            .description,
+            .description p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.suburb-content2 {
+    padding: 11.625rem 0 5.375rem 0;
+    background: linear-gradient(180deg, $secondary 0%, $quaternary 100%);
+    position: relative;
+
+    @media screen and (max-width:768px) {
+        padding: 8rem 0 0 0;
+    }
+
+    .title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width:576px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    .heading {
+        font-size: 2rem;
+        margin: 1.25rem 0;
+
+        @media screen and (max-width:576px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    .description,
+    .description p {
+        font-size: 1.125rem;
+
+        ul {
+            margin-left: 2rem;
+
+            li {
+                list-style-type: disc;
+            }
+        }
+    }
+
+    .main-image {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+
+        @media screen and (max-width:1199px) {
+            right: 0;
+        }
+
+        @media screen and (max-width:768px) {
+            position: relative;
+            margin-top: 1rem;
+        }
+    }
+}

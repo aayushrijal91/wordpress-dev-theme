@@ -1,0 +1,41 @@
+$primary: #D52B73;
+$secondary: #2B2B2B;
+$tertiary: #414141;
+$quaternary: #F9961F;
+$light: #F4F4F4;
+$gray: #252525;
+$lightgray:#3F3F3F;
+$darkgray: #202020;
+$white: #ffffff;
+$black: #000000;
+$blue: #1DA8DF;
+
+$theme-colors: (
+    "tertiary": $tertiary,
+    "quaternary": $quaternary,
+    "light": $light,
+    "gray": $gray,
+    "lightgray": $lightgray,
+    "darkgray": $darkgray,
+    "white": $white,
+    "black": $black,
+    "blue": $blue,
+);
+
+// Grid Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+// Container sizing
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1638px,
+) !default;
+
