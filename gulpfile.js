@@ -1,36 +1,25 @@
-// Imports
-var path = require('path');
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var imagemin = require('gulp-imagemin');
-var del = require('del');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var sass = require('gulp-sass');
-var cssnano = require('gulp-cssnano');
-var concat = require('gulp-concat');
-var cache = require('gulp-cached');
-var uglify = require('gulp-uglify-es').default;
+const path = require('path');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
+const del = require('del');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
+const concat = require('gulp-concat');
+const cache = require('gulp-cached');
+const uglify = require('gulp-uglify-es').default;
 //const webp = require('gulp-webp');
 
 // Bootstrap Javascript
 var BOOTSTRAP = './node_modules/bootstrap/js/dist/';
 var bootstrap_scripts = [
-    // Don't need jquery because WordPress comes with it
-    // 'node_modules/jquery/dist/jquery.min.js',
-    // BOOTSTRAP + 'alert.js',
-    // BOOTSTRAP + 'button.js',
     BOOTSTRAP + 'util.js',
-    //BOOTSTRAP + 'carousel.js',
     BOOTSTRAP + 'collapse.js',
     BOOTSTRAP + 'dropdown.js',
-    // BOOTSTRAP + 'index.js',
     BOOTSTRAP + 'modal.js',
-    // BOOTSTRAP + 'popover.js',
-    // BOOTSTRAP + 'scrollspy.js',
     BOOTSTRAP + 'tab.js',
-    // BOOTSTRAP + 'toast.js',
-    // BOOTSTRAP + 'tooltip.js',
 ];
 
 // Lazy Loading Library
@@ -38,13 +27,6 @@ var lazy_load_script = './node_modules/lazyload/lazyload.min.js';
 
 // slick
 var slick = './node_modules/slick-carousel/slick/slick.min.js';
-
-// Font Awesome Icons
-//var font_awesome_scripts = [
-//    'node_modules/@fortawesome/fontawesome-free/js/brands.min.js',
-//    'node_modules/@fortawesome/fontawesome-free/js/regular.min.js',
-//    'node_modules/@fortawesome/fontawesome-free/js/solid.min.js',
-//];
 
 // Magnific Popup
 var magnific_popup_scripts = ['./node_modules/magnific-popup/dist/jquery.magnific-popup.js'];

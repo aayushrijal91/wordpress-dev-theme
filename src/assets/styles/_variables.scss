@@ -1,41 +1,91 @@
-$primary: #D52B73;
-$secondary: #2B2B2B;
-$tertiary: #414141;
-$quaternary: #F9961F;
-$light: #F4F4F4;
-$gray: #252525;
-$lightgray:#3F3F3F;
-$darkgray: #202020;
-$white: #ffffff;
-$black: #000000;
-$blue: #1DA8DF;
+$primary: #440099;
+$secondary: #C2046E;
+$tertiary: #3729C2;
+$dark: #393A41;
+$light: #e5e5e5;
 
-$theme-colors: (
-    "tertiary": $tertiary,
-    "quaternary": $quaternary,
-    "light": $light,
-    "gray": $gray,
-    "lightgray": $lightgray,
-    "darkgray": $darkgray,
-    "white": $white,
-    "black": $black,
-    "blue": $blue,
+$theme-colors: () !default;
+$theme-colors: map-merge(
+    (
+        "tertiary": $tertiary,
+    ),
+    $theme-colors
 );
 
 // Grid Breakpoints
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1440px,
+    xxl: 1748px,
 ) !default;
 
 // Container sizing
 $container-max-widths: (
     sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1638px,
+    md: 740px,
+    lg: 1280px,
+    xl: 1442px,
+    xxl: 1628px,
 ) !default;
 
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+    (
+        6: (
+            $spacer * 4,
+        ),
+        7: (
+            $spacer * 5,
+        ),
+        8: (
+            $spacer * 6,
+        ),
+        9: (
+            $spacer * 7,
+        ),
+        10: (
+            $spacer * 10,
+        ),
+        11: (
+            $spacer * 11,
+        ),
+        12: (
+            $spacer * 12,
+        ),
+        13: (
+            $spacer * 13,
+        ),
+        14: (
+            $spacer * 14,
+        ),
+        15: (
+            $spacer * 15,
+        ),
+        16: (
+            $spacer * 16,
+        ),
+        17: (
+            $spacer * 17,
+        ),
+        18: (
+            $spacer * 18,
+        ),
+        19: (
+            $spacer * 19,
+        ),
+        20: (
+            $spacer * 20,
+        ),
+        23: (
+            $spacer * 23,
+        ),
+        25: (
+            $spacer * 25,
+        ),
+    ),
+    $spacers
+);
