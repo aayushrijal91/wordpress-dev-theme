@@ -14,8 +14,4 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div class="container">
-        <div class="testing">testing</div>
-    </div>
-</body>
-</html>
+    
